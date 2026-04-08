@@ -106,9 +106,21 @@ function createCard(game, index) {
   const card = document.createElement('div');
   card.className = 'game-card';
   card.style.animationDelay = `${index * 40}ms`;
+
+  // Build thumb: image if thumbnail_url exists, else emoji
+  const thumbContent = game.thumbnail_url
+    ? `<img
+        src="${game.thumbnail_url}"
+        alt="${game.title}"
+        class="card-thumb-img"
+        onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
+       />
+       <span class="card-thumb-emoji" style="display:none">${game.thumbnail}</span>`
+    : `<span class="card-thumb-emoji">${game.thumbnail}</span>`;
+
   card.innerHTML = `
     <div class="card-thumb">
-      <span>${game.thumbnail}</span>
+      ${thumbContent}
       <div class="card-thumb-glow"></div>
     </div>
     <div class="card-body">
@@ -128,28 +140,23 @@ function createCard(game, index) {
 //  MODAL — OPEN / CLOSE
 // ─────────────────────────────────────────────
 function openGame(game) {
-  // Populate modal info
   modalTitle.textContent = game.title;
   modalEmoji.textContent = game.thumbnail;
   modalCat.textContent   = game.category;
   modalDesc.textContent  = game.description;
 
-  // Show loader, clear previous src
   iframeLoader.classList.remove('hidden');
   gameFrame.src = '';
 
-  // Open overlay
   modalOverlay.classList.add('open');
   document.body.style.overflow = 'hidden';
 
-  // Load game
   gameFrame.src = game.url;
 
   gameFrame.onload = () => {
     iframeLoader.classList.add('hidden');
   };
 
-  // Fallback hide loader after 6s (some iframes block onload)
   setTimeout(() => iframeLoader.classList.add('hidden'), 6000);
 }
 
@@ -173,17 +180,14 @@ fullscreenBtn.addEventListener('click', () => {
 // ─────────────────────────────────────────────
 modalClose.addEventListener('click', closeModal);
 
-// Click outside modal to close
 modalOverlay.addEventListener('click', (e) => {
   if (e.target === modalOverlay) closeModal();
 });
 
-// Escape key
 document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape') closeModal();
 });
 
-// Search
 searchInput.addEventListener('input', (e) => {
   searchQuery = e.target.value;
   renderGames();

@@ -581,3 +581,34 @@ body {
   .modal-footer { flex-direction: column; align-items: flex-start; gap: 10px; }
   .fullscreen-btn { width: 100%; text-align: center; }
 }
+
+/* ─────────────────────────────────────────────
+   THUMBNAIL IMAGE SUPPORT
+   Add these rules to the bottom of style.css
+───────────────────────────────────────────── */
+
+.card-thumb-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  inset: 0;
+  display: block;
+  transition: transform 0.3s;
+}
+
+.game-card:hover .card-thumb-img {
+  transform: scale(1.05);
+}
+
+.card-thumb-emoji {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  font-size: 3.5rem;
+  position: relative;
+  z-index: 1;
+}
+
