@@ -1,8 +1,162 @@
 [
-  "id": 1,
+  {
+    "id": 1,
     "title": "Block Blast",
     "category": "Puzzle",
     "thumbnail": "🧩",
-    "description": "Blast some blocks yo",
+    "description": "Clear the board by blasting rows of blocks!",
     "url": "https://www.hoodamath.com/mobile/games/block-blast/game.html?nocheckorient=1"
+  },
+  {
+    "id": 2,
+    "title": "Slope",
+    "category": "Action",
+    "thumbnail": "🔴",
+    "description": "Race a ball down an endless neon slope. Don't fall off!",
+    "url": "https://y8.com/embed/slope"
+  },
+  {
+    "id": 3,
+    "title": "Extreme Slope",
+    "category": "Action",
+    "thumbnail": "⚡",
+    "description": "High-adrenaline slope game — dodge obstacles at full speed.",
+    "url": "https://idev.games/embed/extreme-slope"
+  },
+  {
+    "id": 4,
+    "title": "Flappy Bird",
+    "category": "Arcade",
+    "thumbnail": "🐦",
+    "description": "The classic tap-to-fly challenge. How far can you go?",
+    "url": "https://funhtml5games.com?embed=flappy"
+  },
+  {
+    "id": 5,
+    "title": "Chess",
+    "category": "Strategy",
+    "thumbnail": "♟️",
+    "description": "Classic chess against the computer. All skill levels welcome.",
+    "url": "https://playpager.com/embed/chess/index.html"
+  },
+  {
+    "id": 6,
+    "title": "Solitaire",
+    "category": "Card",
+    "thumbnail": "🃏",
+    "description": "The timeless card game. Stack suits and clear the board.",
+    "url": "https://playpager.com/embed/solitaire/index.html"
+  },
+  {
+    "id": 7,
+    "title": "Sudoku",
+    "category": "Puzzle",
+    "thumbnail": "🔢",
+    "description": "Fill the grid — every row, column, and box needs 1–9.",
+    "url": "https://playpager.com/embed/sudoku/index.html"
+  },
+  {
+    "id": 8,
+    "title": "Checkers",
+    "category": "Strategy",
+    "thumbnail": "🔵",
+    "description": "Classic checkers vs the computer. Crown your pieces!",
+    "url": "https://playpager.com/embed/checkers/index.html"
+  },
+  {
+    "id": 9,
+    "title": "Word Puzzle",
+    "category": "Word",
+    "thumbnail": "🔤",
+    "description": "Find hidden words before the timer runs out.",
+    "url": "https://playpager.com/embed/wordpuzzle/index.html"
+  },
+  {
+    "id": 10,
+    "title": "Falling Cubes",
+    "category": "Puzzle",
+    "thumbnail": "🟦",
+    "description": "Tetris-style falling blocks — stack and clear lines.",
+    "url": "https://playpager.com/embed/cubes/index.html"
+  },
+  {
+    "id": 11,
+    "title": "Othello Reversi",
+    "category": "Strategy",
+    "thumbnail": "⚫",
+    "description": "Flip tiles to take over the board in this classic strategy game.",
+    "url": "https://playpager.com/embed/reversi/index.html"
+  },
+  {
+    "id": 12,
+    "title": "Wordle",
+    "category": "Word",
+    "thumbnail": "🟩",
+    "description": "Guess the 5-letter word in 6 tries. A new puzzle every day.",
+    "url": "https://cdn.bubbleshooter.net/games/wordle/"
+  },
+  {
+    "id": 13,
+    "title": "Tetris Cube",
+    "category": "Puzzle",
+    "thumbnail": "🟨",
+    "description": "Spin and drop Tetris pieces to clear the board.",
+    "url": "https://cdn.bubbleshooter.net/games/tetris-cube/"
+  },
+  {
+    "id": 14,
+    "title": "Merge Block",
+    "category": "Puzzle",
+    "thumbnail": "➕",
+    "description": "Slide and merge numbered blocks to reach the highest score.",
+    "url": "https://idev.games/embed/merge-block"
+  },
+  {
+    "id": 15,
+    "title": "Simple Platformer",
+    "category": "Arcade",
+    "thumbnail": "🏃",
+    "description": "Jump across platforms and dodge enemies in this side-scroller.",
+    "url": "https://idev.games/embed/simple-platformer"
+  },
+  {
+    "id": 16,
+    "title": "Cube Rush",
+    "category": "Action",
+    "thumbnail": "🧊",
+    "description": "Guide your cube through an obstacle course at breakneck speed.",
+    "url": "https://idev.games/embed/cube"
+  },
+  {
+    "id": 17,
+    "title": "Whack-a-Mole",
+    "category": "Arcade",
+    "thumbnail": "🔨",
+    "description": "Whack as many moles as you can before time runs out!",
+    "url": "https://idev.games/embed/wacamole-pecman"
+  },
+  {
+    "id": 18,
+    "title": "Retro Snake",
+    "category": "Arcade",
+    "thumbnail": "🐍",
+    "description": "Eat, grow, and don't hit the walls. The OG mobile classic.",
+    "url": "https://www.hoodamath.com/mobile/games/hooda-snake/game.html?nocheckorient=1"
+  },
+  {
+    "id": 19,
+    "title": "2048",
+    "category": "Puzzle",
+    "thumbnail": "🔢",
+    "description": "Slide and merge tiles to reach the 2048 tile. Easier said than done.",
+    "url": "https://www.hoodamath.com/mobile/games/2048/game.html?nocheckorient=1"
+  },
+  {
+    "id": 20,
+    "title": "Run 3",
+    "category": "Action",
+    "thumbnail": "🌀",
+    "description": "Sprint through a crumbling space tunnel — don't fall into the void!",
+    "url": "https://www.hoodamath.com/mobile/games/run-3/game.html?nocheckorient=1"
+  }
 ]
