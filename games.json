@@ -4,14 +4,16 @@
     "title": "Block Blast",
     "category": "Puzzle",
     "thumbnail": "🧩",
-    "description": "Clear the board by blasting rows of blocks!",
-    "url": "https://www.hoodamath.com/mobile/games/block-blast/game.html?nocheckorient=1"
+    "thumbnail_url": "https://www.hoodamath.com/games/blockblast.png",
+    "description": "Blast some blocks yo",
+    "url": "https://idev.games/embed/merge-block"
   },
   {
     "id": 2,
     "title": "Slope",
     "category": "Action",
     "thumbnail": "🔴",
+    "thumbnail_url": "https://img.y8.com/cloud/v2-y8-thumbs-small-thumbnails-001/61687/small.gif",
     "description": "Race a ball down an endless neon slope. Don't fall off!",
     "url": "https://y8.com/embed/slope"
   },
@@ -20,6 +22,7 @@
     "title": "Extreme Slope",
     "category": "Action",
     "thumbnail": "⚡",
+    "thumbnail_url": "https://idev.games/assets/img/games/extreme-slope.jpg",
     "description": "High-adrenaline slope game — dodge obstacles at full speed.",
     "url": "https://idev.games/embed/extreme-slope"
   },
@@ -28,6 +31,7 @@
     "title": "Flappy Bird",
     "category": "Arcade",
     "thumbnail": "🐦",
+    "thumbnail_url": "https://funhtml5games.com/flappy/flappy_bird.png",
     "description": "The classic tap-to-fly challenge. How far can you go?",
     "url": "https://funhtml5games.com?embed=flappy"
   },
@@ -36,6 +40,7 @@
     "title": "Chess",
     "category": "Strategy",
     "thumbnail": "♟️",
+    "thumbnail_url": "https://playpager.com/embed/chess/preview.jpg",
     "description": "Classic chess against the computer. All skill levels welcome.",
     "url": "https://playpager.com/embed/chess/index.html"
   },
@@ -44,6 +49,7 @@
     "title": "Solitaire",
     "category": "Card",
     "thumbnail": "🃏",
+    "thumbnail_url": "https://playpager.com/embed/solitaire/preview.jpg",
     "description": "The timeless card game. Stack suits and clear the board.",
     "url": "https://playpager.com/embed/solitaire/index.html"
   },
@@ -52,6 +58,7 @@
     "title": "Sudoku",
     "category": "Puzzle",
     "thumbnail": "🔢",
+    "thumbnail_url": "https://playpager.com/embed/sudoku/preview.jpg",
     "description": "Fill the grid — every row, column, and box needs 1–9.",
     "url": "https://playpager.com/embed/sudoku/index.html"
   },
@@ -60,6 +67,7 @@
     "title": "Checkers",
     "category": "Strategy",
     "thumbnail": "🔵",
+    "thumbnail_url": "https://playpager.com/embed/checkers/preview.jpg",
     "description": "Classic checkers vs the computer. Crown your pieces!",
     "url": "https://playpager.com/embed/checkers/index.html"
   },
@@ -68,6 +76,7 @@
     "title": "Word Puzzle",
     "category": "Word",
     "thumbnail": "🔤",
+    "thumbnail_url": "https://playpager.com/embed/wordpuzzle/preview.jpg",
     "description": "Find hidden words before the timer runs out.",
     "url": "https://playpager.com/embed/wordpuzzle/index.html"
   },
@@ -76,6 +85,7 @@
     "title": "Falling Cubes",
     "category": "Puzzle",
     "thumbnail": "🟦",
+    "thumbnail_url": "https://playpager.com/embed/cubes/preview.jpg",
     "description": "Tetris-style falling blocks — stack and clear lines.",
     "url": "https://playpager.com/embed/cubes/index.html"
   },
@@ -84,6 +94,7 @@
     "title": "Othello Reversi",
     "category": "Strategy",
     "thumbnail": "⚫",
+    "thumbnail_url": "https://playpager.com/embed/reversi/preview.jpg",
     "description": "Flip tiles to take over the board in this classic strategy game.",
     "url": "https://playpager.com/embed/reversi/index.html"
   },
@@ -92,6 +103,7 @@
     "title": "Wordle",
     "category": "Word",
     "thumbnail": "🟩",
+    "thumbnail_url": "https://cdn.bubbleshooter.net/games/wordle/preview.jpg",
     "description": "Guess the 5-letter word in 6 tries. A new puzzle every day.",
     "url": "https://cdn.bubbleshooter.net/games/wordle/"
   },
@@ -100,6 +112,7 @@
     "title": "Tetris Cube",
     "category": "Puzzle",
     "thumbnail": "🟨",
+    "thumbnail_url": "https://cdn.bubbleshooter.net/games/tetris-cube/preview.jpg",
     "description": "Spin and drop Tetris pieces to clear the board.",
     "url": "https://cdn.bubbleshooter.net/games/tetris-cube/"
   },
@@ -108,6 +121,7 @@
     "title": "Merge Block",
     "category": "Puzzle",
     "thumbnail": "➕",
+    "thumbnail_url": "https://idev.games/assets/img/games/merge-block.jpg",
     "description": "Slide and merge numbered blocks to reach the highest score.",
     "url": "https://idev.games/embed/merge-block"
   },
@@ -116,6 +130,7 @@
     "title": "Simple Platformer",
     "category": "Arcade",
     "thumbnail": "🏃",
+    "thumbnail_url": "https://idev.games/assets/img/games/simple-platformer.jpg",
     "description": "Jump across platforms and dodge enemies in this side-scroller.",
     "url": "https://idev.games/embed/simple-platformer"
   },
@@ -124,6 +139,7 @@
     "title": "Cube Rush",
     "category": "Action",
     "thumbnail": "🧊",
+    "thumbnail_url": "https://idev.games/assets/img/games/cube.jpg",
     "description": "Guide your cube through an obstacle course at breakneck speed.",
     "url": "https://idev.games/embed/cube"
   },
@@ -132,6 +148,7 @@
     "title": "Whack-a-Mole",
     "category": "Arcade",
     "thumbnail": "🔨",
+    "thumbnail_url": "https://idev.games/assets/img/games/wacamole-pecman.jpg",
     "description": "Whack as many moles as you can before time runs out!",
     "url": "https://idev.games/embed/wacamole-pecman"
   },
@@ -140,6 +157,7 @@
     "title": "Retro Snake",
     "category": "Arcade",
     "thumbnail": "🐍",
+    "thumbnail_url": "https://www.hoodamath.com/games/hoodasnake.png",
     "description": "Eat, grow, and don't hit the walls. The OG mobile classic.",
     "url": "https://www.hoodamath.com/mobile/games/hooda-snake/game.html?nocheckorient=1"
   },
@@ -148,6 +166,7 @@
     "title": "2048",
     "category": "Puzzle",
     "thumbnail": "🔢",
+    "thumbnail_url": "https://www.hoodamath.com/games/2048.png",
     "description": "Slide and merge tiles to reach the 2048 tile. Easier said than done.",
     "url": "https://www.hoodamath.com/mobile/games/2048/game.html?nocheckorient=1"
   },
@@ -156,7 +175,17 @@
     "title": "Run 3",
     "category": "Action",
     "thumbnail": "🌀",
+    "thumbnail_url": "https://www.coolmathgames.com/sites/default/files/Run3_OGimage.jpg",
     "description": "Sprint through a crumbling space tunnel — don't fall into the void!",
-    "url": "https://www.hoodamath.com/mobile/games/run-3/game.html?nocheckorient=1"
+    "url": "https://lekug.github.io/tn6pS9dCf37xAhkJv/"
+  },
+  {
+    "id": 21,
+    "title": "Geometry Dash",
+    "category": "Action",
+    "thumbnail": "🔷",
+    "thumbnail_url": "https://cdn.jsdelivr.net/gh/ccported/games@68a06c5354670671f783001244065d1b45225074/game_28d8_bb38d44c326f3/image/loading.png",
+    "description": "Jump and fly your way through danger in this rhythm-based platformer.",
+    "url": "https://ccgstatic.com/games/game_28d8_bb38d44c326f3/index.html"
   }
 ]
