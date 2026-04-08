@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "title": "2048",
+    "category": "Puzzle",
+    "thumbnail": "🧩",
+    "description": "Slide tiles to reach 2048!",
+    "url": "https://play2048.co/"
+  },
+  {
+    "id": 2,
+    "title": "Slope",
+    "category": "Action",
+    "thumbnail": "🎯",
+    "description": "Roll down an endless slope!",
+    "url": "https://slope-game.github.io/"
+  },
+  {
+    "id": 3,
+    "title": "Snake",
+    "category": "Arcade",
+    "thumbnail": "🐍",
+    "description": "Classic snake game. Eat and grow!",
+    "url": "https://playsnake.org/"
+  },
+  {
+    "id": 4,
+    "title": "Tetris",
+    "category": "Puzzle",
+    "thumbnail": "🟦",
+    "description": "Stack blocks and clear lines!",
+    "url": "https://tetris.com/play-tetris"
+  },
+  {
+    "id": 5,
+    "title": "Flappy Bird",
+    "category": "Arcade",
+    "thumbnail": "🐦",
+    "description": "Fly through the pipes!",
+    "url": "https://flappybird.io/"
+  },
+  {
+    "id": 6,
+    "title": "Cookie Clicker",
+    "category": "Idle",
+    "thumbnail": "🍪",
+    "description": "Click cookies, build an empire!",
+    "url": "https://orteil.dashnet.org/cookieclicker/"
+  },
+  {
+    "id": 7,
+    "title": "Minesweeper",
+    "category": "Puzzle",
+    "thumbnail": "💣",
+    "description": "Clear the minefield safely!",
+    "url": "https://minesweeper.online/"
+  },
+  {
+    "id": 8,
+    "title": "Run 3",
+    "category": "Action",
+    "thumbnail": "🏃",
+    "description": "Run through space tunnels!",
+    "url": "https://www.crazygames.com/game/run-3-online"
+  },
+  {
+    "id": 9,
+    "title": "Chess",
+    "category": "Strategy",
+    "thumbnail": "♟️",
+    "description": "Play chess against the computer!",
+    "url": "https://www.chess.com/play/computer"
+  },
+  {
+    "id": 10,
+    "title": "Tic Tac Toe",
+    "category": "Strategy",
+    "thumbnail": "❌",
+    "description": "Classic 3-in-a-row game!",
+    "url": "https://playtictactoe.org/"
+  },
+  {
+    "id": 11,
+    "title": "Wordle",
+    "category": "Puzzle",
+    "thumbnail": "📝",
+    "description": "Guess the 5-letter word!",
+    "url": "https://www.nytimes.com/games/wordle/index.html"
+  },
+  {
+    "id": 12,
+    "title": "Stack Ball",
+    "category": "Arcade",
+    "thumbnail": "🔴",
+    "description": "Smash through colorful platforms!",
+    "url": "https://www.crazygames.com/game/stack-ball-3d"
+  }
+]

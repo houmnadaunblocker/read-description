@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ArcadeZone — Unblocked Games</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;500;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-icon">🕹️</span>
+        <span class="logo-text">Arcade<span class="logo-accent">Zone</span></span>
+      </div>
+      <div class="search-bar">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="searchInput" placeholder="Search games..." />
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <h1 class="hero-title">Play Free.<br/>No Limits.</h1>
+      <p class="hero-sub">Unblocked games for everyone, anywhere.</p>
+    </div>
+    <div class="scanlines"></div>
+  </section>
+
+  <!-- CATEGORIES -->
+  <section class="categories-section">
+    <div class="container">
+      <div class="category-filters" id="categoryFilters">
+        <button class="cat-btn active" data-cat="All">All</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- GAME GRID -->
+  <main class="main-content">
+    <div class="container">
+      <div class="section-label">
+        <span id="gameCount">0</span> Games Available
+      </div>
+      <div class="game-grid" id="gameGrid">
+        <!-- Cards injected by JS -->
+      </div>
+      <div class="no-results" id="noResults" style="display:none;">
+        <span>😕</span>
+        <p>No games found. Try a different search!</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- MODAL -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal" id="modal">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <span class="modal-emoji" id="modalEmoji"></span>
+          <div>
+            <h2 class="modal-title" id="modalTitle"></h2>
+            <span class="modal-cat" id="modalCat"></span>
+          </div>
+        </div>
+        <button class="modal-close" id="modalClose">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="iframe-wrapper">
+          <div class="iframe-loader" id="iframeLoader">
+            <div class="loader-ring"></div>
+            <span>Loading game...</span>
+          </div>
+          <iframe id="gameFrame" allowfullscreen sandbox="allow-scripts allow-same-origin allow-forms allow-popups"></iframe>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <span class="modal-desc" id="modalDesc"></span>
+        <button class="fullscreen-btn" id="fullscreenBtn">⛶ Fullscreen</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>🕹️ ArcadeZone — Play anywhere, anytime.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
