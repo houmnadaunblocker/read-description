@@ -1,10 +1,247 @@
 // ─────────────────────────────────────────────
-//  ArcadeZone — app.js
+//  Meiglets Unblocked — app.js
+//  Games data is embedded directly to avoid
+//  fetch/CORS/caching issues on GitHub Pages.
 // ─────────────────────────────────────────────
 
-const GAMES_URL = 'games.json';
+const GAMES = [
+  {
+    "id": 1,
+    "title": "Block Blast",
+    "category": "Puzzle",
+    "thumbnail": "🧩",
+    "thumbnail_url": "https://www.hoodamath.com/games/blockblast.png",
+    "description": "Blast some blocks yo",
+    "url": "https://idev.games/embed/merge-block"
+  },
+  {
+    "id": 2,
+    "title": "Slope",
+    "category": "Action",
+    "thumbnail": "🔴",
+    "thumbnail_url": "https://img.y8.com/cloud/v2-y8-thumbs-small-thumbnails-001/61687/small.gif",
+    "description": "Race a ball down an endless neon slope. Don't fall off!",
+    "url": "https://y8.com/embed/slope"
+  },
+  {
+    "id": 3,
+    "title": "Extreme Slope",
+    "category": "Action",
+    "thumbnail": "⚡",
+    "thumbnail_url": "https://idev.games/assets/img/games/extreme-slope.jpg",
+    "description": "High-adrenaline slope game - dodge obstacles at full speed.",
+    "url": "https://idev.games/embed/extreme-slope"
+  },
+  {
+    "id": 4,
+    "title": "Flappy Bird",
+    "category": "Arcade",
+    "thumbnail": "🐦",
+    "thumbnail_url": "https://funhtml5games.com/flappy/flappy_bird.png",
+    "description": "The classic tap-to-fly challenge. How far can you go?",
+    "url": "https://funhtml5games.com?embed=flappy"
+  },
+  {
+    "id": 5,
+    "title": "Chess",
+    "category": "Strategy",
+    "thumbnail": "♟️",
+    "thumbnail_url": "https://playpager.com/embed/chess/preview.jpg",
+    "description": "Classic chess against the computer. All skill levels welcome.",
+    "url": "https://playpager.com/embed/chess/index.html"
+  },
+  {
+    "id": 6,
+    "title": "Solitaire",
+    "category": "Card",
+    "thumbnail": "🃏",
+    "thumbnail_url": "https://playpager.com/embed/solitaire/preview.jpg",
+    "description": "The timeless card game. Stack suits and clear the board.",
+    "url": "https://playpager.com/embed/solitaire/index.html"
+  },
+  {
+    "id": 7,
+    "title": "Sudoku",
+    "category": "Puzzle",
+    "thumbnail": "🔢",
+    "thumbnail_url": "https://playpager.com/embed/sudoku/preview.jpg",
+    "description": "Fill the grid - every row, column, and box needs 1-9.",
+    "url": "https://playpager.com/embed/sudoku/index.html"
+  },
+  {
+    "id": 8,
+    "title": "Checkers",
+    "category": "Strategy",
+    "thumbnail": "🔵",
+    "thumbnail_url": "https://playpager.com/embed/checkers/preview.jpg",
+    "description": "Classic checkers vs the computer. Crown your pieces!",
+    "url": "https://playpager.com/embed/checkers/index.html"
+  },
+  {
+    "id": 9,
+    "title": "Word Puzzle",
+    "category": "Word",
+    "thumbnail": "🔤",
+    "thumbnail_url": "https://playpager.com/embed/wordpuzzle/preview.jpg",
+    "description": "Find hidden words before the timer runs out.",
+    "url": "https://playpager.com/embed/wordpuzzle/index.html"
+  },
+  {
+    "id": 10,
+    "title": "Falling Cubes",
+    "category": "Puzzle",
+    "thumbnail": "🟦",
+    "thumbnail_url": "https://playpager.com/embed/cubes/preview.jpg",
+    "description": "Tetris-style falling blocks - stack and clear lines.",
+    "url": "https://playpager.com/embed/cubes/index.html"
+  },
+  {
+    "id": 11,
+    "title": "Othello Reversi",
+    "category": "Strategy",
+    "thumbnail": "⚫",
+    "thumbnail_url": "https://playpager.com/embed/reversi/preview.jpg",
+    "description": "Flip tiles to take over the board in this classic strategy game.",
+    "url": "https://playpager.com/embed/reversi/index.html"
+  },
+  {
+    "id": 12,
+    "title": "Wordle",
+    "category": "Word",
+    "thumbnail": "🟩",
+    "thumbnail_url": "https://cdn.bubbleshooter.net/games/wordle/preview.jpg",
+    "description": "Guess the 5-letter word in 6 tries. A new puzzle every day.",
+    "url": "https://cdn.bubbleshooter.net/games/wordle/"
+  },
+  {
+    "id": 13,
+    "title": "Tetris Cube",
+    "category": "Puzzle",
+    "thumbnail": "🟨",
+    "thumbnail_url": "https://cdn.bubbleshooter.net/games/tetris-cube/preview.jpg",
+    "description": "Spin and drop Tetris pieces to clear the board.",
+    "url": "https://cdn.bubbleshooter.net/games/tetris-cube/"
+  },
+  {
+    "id": 14,
+    "title": "Merge Block",
+    "category": "Puzzle",
+    "thumbnail": "➕",
+    "thumbnail_url": "https://idev.games/assets/img/games/merge-block.jpg",
+    "description": "Slide and merge numbered blocks to reach the highest score.",
+    "url": "https://idev.games/embed/merge-block"
+  },
+  {
+    "id": 15,
+    "title": "Simple Platformer",
+    "category": "Arcade",
+    "thumbnail": "🏃",
+    "thumbnail_url": "https://idev.games/assets/img/games/simple-platformer.jpg",
+    "description": "Jump across platforms and dodge enemies in this side-scroller.",
+    "url": "https://idev.games/embed/simple-platformer"
+  },
+  {
+    "id": 16,
+    "title": "Cube Rush",
+    "category": "Action",
+    "thumbnail": "🧊",
+    "thumbnail_url": "https://idev.games/assets/img/games/cube.jpg",
+    "description": "Guide your cube through an obstacle course at breakneck speed.",
+    "url": "https://idev.games/embed/cube"
+  },
+  {
+    "id": 17,
+    "title": "Whack-a-Mole",
+    "category": "Arcade",
+    "thumbnail": "🔨",
+    "thumbnail_url": "https://idev.games/assets/img/games/wacamole-pecman.jpg",
+    "description": "Whack as many moles as you can before time runs out!",
+    "url": "https://idev.games/embed/wacamole-pecman"
+  },
+  {
+    "id": 18,
+    "title": "Retro Snake",
+    "category": "Arcade",
+    "thumbnail": "🐍",
+    "thumbnail_url": "https://www.hoodamath.com/games/hoodasnake.png",
+    "description": "Eat, grow, and don't hit the walls. The OG mobile classic.",
+    "url": "https://www.hoodamath.com/mobile/games/hooda-snake/game.html?nocheckorient=1"
+  },
+  {
+    "id": 19,
+    "title": "2048",
+    "category": "Puzzle",
+    "thumbnail": "🔢",
+    "thumbnail_url": "https://www.hoodamath.com/games/2048.png",
+    "description": "Slide and merge tiles to reach the 2048 tile. Easier said than done.",
+    "url": "https://www.hoodamath.com/mobile/games/2048/game.html?nocheckorient=1"
+  },
+  {
+    "id": 20,
+    "title": "Run 3",
+    "category": "Action",
+    "thumbnail": "🌀",
+    "thumbnail_url": "https://www.coolmathgames.com/sites/default/files/Run3_OGimage.jpg",
+    "description": "Sprint through a crumbling space tunnel - don't fall into the void!",
+    "url": "https://lekug.github.io/tn6pS9dCf37xAhkJv/"
+  },
+  {
+    "id": 21,
+    "title": "Geometry Dash",
+    "category": "Action",
+    "thumbnail": "🔷",
+    "thumbnail_url": "https://cdn.jsdelivr.net/gh/ccported/games@68a06c5354670671f783001244065d1b45225074/game_28d8_bb38d44c326f3/image/loading.png",
+    "description": "Jump and fly your way through danger in this rhythm-based platformer.",
+    "url": "https://ccgstatic.com/games/game_28d8_bb38d44c326f3/index.html"
+  },
+  {
+    "id": 22,
+    "title": "Idle Dice",
+    "category": "Idle",
+    "thumbnail": "🎲",
+    "thumbnail_url": "",
+    "description": "Roll dice and build an idle empire. Watch your numbers grow endlessly.",
+    "url": "https://ccgstatic.com/games/game_c411_d5ac57bea9aaa/index.html"
+  },
+  {
+    "id": 23,
+    "title": "Gladihoppers",
+    "category": "Action",
+    "thumbnail": "⚔️",
+    "thumbnail_url": "",
+    "description": "Wobbly gladiator brawls - physics-based combat in the arena!",
+    "url": "https://ccgstatic.com/games/game_e45c_0d7531e30a6e5/index.html"
+  },
+  {
+    "id": 24,
+    "title": "Cookie Clicker",
+    "category": "Idle",
+    "thumbnail": "🍪",
+    "thumbnail_url": "",
+    "description": "Click cookies, build a bakery empire, and unlock absurd upgrades.",
+    "url": "https://ccgstatic.com/games/game_d6fc_1da341a63fda5/index.html"
+  },
+  {
+    "id": 25,
+    "title": "Bit Planes",
+    "category": "Action",
+    "thumbnail": "✈️",
+    "thumbnail_url": "",
+    "description": "Pixel dogfight mayhem - deathmatch, teams, and split-screen duels.",
+    "url": "https://ccgstatic.com/games/game_8d3d_cc740f1ae9cab/index.html"
+  },
+  {
+    "id": 26,
+    "title": "Minecraft",
+    "category": "Sandbox",
+    "thumbnail": "⛏️",
+    "thumbnail_url": "",
+    "description": "Build, survive, and explore in the iconic block world.",
+    "url": "https://ccgstatic.com/games/game_c548_229f0f5dbd3a88/index.html"
+  }
+];
 
-let allGames   = [];
+let allGames       = GAMES;
 let activeCategory = 'All';
 let searchQuery    = '';
 
@@ -26,23 +263,11 @@ const modalDesc     = document.getElementById('modalDesc');
 const fullscreenBtn = document.getElementById('fullscreenBtn');
 
 // ─────────────────────────────────────────────
-//  FETCH & INIT
+//  INIT — no fetch needed, data is already here
 // ─────────────────────────────────────────────
-async function init() {
-  try {
-    const res = await fetch(GAMES_URL);
-    if (!res.ok) throw new Error('Failed to load games.json');
-    allGames = await res.json();
-    buildCategories();
-    renderGames();
-  } catch (err) {
-    gameGrid.innerHTML = `
-      <div class="no-results" style="display:block; grid-column:1/-1;">
-        <span>⚠️</span>
-        <p>Could not load games. Make sure <strong>games.json</strong> is in the same folder.</p>
-        <p style="margin-top:8px;font-size:0.8rem;opacity:0.5;">${err.message}</p>
-      </div>`;
-  }
+function init() {
+  buildCategories();
+  renderGames();
 }
 
 // ─────────────────────────────────────────────
@@ -76,7 +301,7 @@ function renderGames() {
   const query = searchQuery.toLowerCase().trim();
 
   const filtered = allGames.filter(g => {
-    const matchCat   = activeCategory === 'All' || g.category === activeCategory;
+    const matchCat    = activeCategory === 'All' || g.category === activeCategory;
     const matchSearch = !query ||
       g.title.toLowerCase().includes(query) ||
       g.description.toLowerCase().includes(query) ||
@@ -107,7 +332,6 @@ function createCard(game, index) {
   card.className = 'game-card';
   card.style.animationDelay = `${index * 40}ms`;
 
-  // Build thumb: image if thumbnail_url exists, else emoji
   const thumbContent = game.thumbnail_url
     ? `<img
         src="${game.thumbnail_url}"
@@ -128,7 +352,7 @@ function createCard(game, index) {
       <div class="card-desc">${game.description}</div>
       <div class="card-footer">
         <span class="card-cat">${game.category}</span>
-        <span class="card-play">▶ Play</span>
+        <span class="card-play">&#9654; Play</span>
       </div>
     </div>
   `;
