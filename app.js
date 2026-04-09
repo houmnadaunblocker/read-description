@@ -232,11 +232,11 @@ const GAMES = [
   },
   {
     "id": 26,
-    "title": "Minecraft",
-    "category": "Sandbox",
-    "thumbnail": "⛏️",
+    "title": "Hollow Knight",
+    "category": "Action",
+    "thumbnail": "💀",
     "thumbnail_url": "",
-    "description": "Build, survive, and explore in the iconic block world.",
+    "description": "Explore a fallen kingdom.",
     "url": "https://ccgstatic.com/games/game_c548_229f0f5dbd3a88/index.html"
   }
 ];
