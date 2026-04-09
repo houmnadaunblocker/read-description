@@ -769,3 +769,32 @@ body {
   .gate-input-wrap { flex-direction: column; }
   .gate-btn { width: 100%; }
 }
+
+/* ─────────────────────────────────────────────
+   REQUEST GAME BUTTON
+───────────────────────────────────────────── */
+.request-btn {
+  flex-shrink: 0;
+  background: transparent;
+  border: 1px solid var(--accent2);
+  color: var(--accent2);
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-family: var(--font-display);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: all 0.2s;
+}
+
+.request-btn:hover {
+  background: var(--accent2);
+  color: #fff;
+  box-shadow: var(--glow2);
+}
+
+@media (max-width: 600px) {
+  .request-btn { display: none; }
+}
