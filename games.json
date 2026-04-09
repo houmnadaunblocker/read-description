@@ -187,5 +187,50 @@
     "thumbnail_url": "https://cdn.jsdelivr.net/gh/ccported/games@68a06c5354670671f783001244065d1b45225074/game_28d8_bb38d44c326f3/image/loading.png",
     "description": "Jump and fly your way through danger in this rhythm-based platformer.",
     "url": "https://ccgstatic.com/games/game_28d8_bb38d44c326f3/index.html"
+  },
+  {
+    "id": 22,
+    "title": "Idle Dice",
+    "category": "Idle",
+    "thumbnail": "🎲",
+    "thumbnail_url": "",
+    "description": "Roll dice and build an idle empire. Watch your numbers grow endlessly.",
+    "url": "https://ccgstatic.com/games/game_c411_d5ac57bea9aaa/index.html"
+  },
+  {
+    "id": 23,
+    "title": "Gladihoppers",
+    "category": "Action",
+    "thumbnail": "⚔️",
+    "thumbnail_url": "",
+    "description": "Wobbly gladiator brawls — physics-based combat in the arena!",
+    "url": "https://ccgstatic.com/games/game_e45c_0d7531e30a6e5/index.html"
+  },
+  {
+    "id": 24,
+    "title": "Cookie Clicker",
+    "category": "Idle",
+    "thumbnail": "🍪",
+    "thumbnail_url": "",
+    "description": "Click cookies, build a bakery empire, and unlock absurd upgrades.",
+    "url": "https://ccgstatic.com/games/game_d6fc_1da341a63fda5/index.html"
+  },
+  {
+    "id": 25,
+    "title": "Bit Planes",
+    "category": "Action",
+    "thumbnail": "✈️",
+    "thumbnail_url": "",
+    "description": "Pixel dogfight mayhem — deathmatch, teams, and split-screen duels.",
+    "url": "https://ccgstatic.com/games/game_8d3d_cc740f1ae9cab/index.html"
+  },
+  {
+    "id": 26,
+    "title": "Hollow Knight",
+    "category": "Action",
+    "thumbnail": "💀",
+    "thumbnail_url": "",
+    "description": "Explore a fallen kingdom.",
+    "url": "https://ccgstatic.com/games/game_c548_229f0f5dbd3a88/index.html"
   }
 ]
