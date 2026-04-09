@@ -238,6 +238,15 @@ const GAMES = [
     "thumbnail_url": "",
     "description": "Explore a fallen kingdom.",
     "url": "https://ccgstatic.com/games/game_c548_229f0f5dbd3a88/index.html"
+  },
+  {
+    "id": 27,
+    "title": "BitLife",
+    "category": "Simulation",
+    "thumbnail": "👶",
+    "thumbnail_url": "",
+    "description": "Simulate random lives.",
+    "url": "https://ccgstatic.com/games/game_d8d4_1fde2f2baf006/index.html"
   }
 ];
 
